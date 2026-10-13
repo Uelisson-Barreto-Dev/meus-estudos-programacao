@@ -1,0 +1,19 @@
+algoritmo "dados_pessoais"
+var
+nome: caractere
+idade: inteiro
+profissao: caractere
+cidade: caractere
+
+inicio
+
+Escreval("Digite seu nome:")
+leia(nome)
+Escreval("Digite sua idade:")
+leia(idade)
+Escreval("Em qual cidade você mora?")
+leia(cidade)
+Escreval("Qual sua profissão?")
+leia(profissao)
+Escreval("Olá , " , nome , " Você tem " , idade , " anos e trabalha como " , profissao , " e mora na cidade de " , cidade , ".")
+fimalgoritmo
