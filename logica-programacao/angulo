@@ -1,0 +1,18 @@
+```portugol
+algoritmo "seno_de_um_angulo"
+
+var
+   angulo: real
+   s: real
+
+inicio
+
+   escreval("Informe um angulo:")
+   leia(angulo)
+
+   s <- sen(grauprad(angulo))
+
+   escreval("O seno de ", angulo, " graus é ", s)
+
+fimalgoritmo
+```
