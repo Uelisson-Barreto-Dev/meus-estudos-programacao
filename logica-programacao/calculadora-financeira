@@ -1,0 +1,49 @@
+```portugol
+algoritmo "calculadora financeira"
+
+var
+   nome: caractere
+   salario: real
+   alimentacao: real
+   transporte: real
+   outras: real
+   total: real
+   restante: real
+   percentual: real
+
+inicio
+
+   escreval("Qual o seu nome?")
+   leia(nome)
+
+   escreval("Quanto e o seu salario total?")
+   leia(salario)
+
+   escreval("Quanto voce gasta com alimentacao?")
+   leia(alimentacao)
+
+   escreval("Quanto voce gasta com transporte?")
+   leia(transporte)
+
+   escreval("Quanto voce gasta com outras despesas?")
+   leia(outras)
+
+   total <- alimentacao + transporte + outras
+   restante <- salario - total
+
+   escreval("")
+   escreval("===== RESUMO FINANCEIRO =====")
+   escreval("Nome: ", nome)
+   escreval("Salario mensal: R$ ", salario)
+   escreval("Total de gastos: R$ ", total)
+   escreval("Saldo restante: R$ ", restante)
+
+   se salario > 0 entao
+      percentual <- total / salario * 100
+      escreval("Gastos representam ", percentual, "% do salario.")
+   senao
+      escreval("Nao foi possivel calcular o percentual dos gastos.")
+   fimse
+
+fimalgoritmo
+```
