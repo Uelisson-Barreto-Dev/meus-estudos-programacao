@@ -1,0 +1,50 @@
+```portugol
+algoritmo "resolver_equacao_segundo_grau"
+
+var
+   a: real
+   b: real
+   c: real
+   delta: real
+   x1: real
+   x2: real
+
+inicio
+
+   escreval("Digite o valor de A:")
+   leia(a)
+
+   escreval("Digite o valor de B:")
+   leia(b)
+
+   escreval("Digite o valor de C:")
+   leia(c)
+
+   se a = 0 entao
+      escreval("O valor de A deve ser diferente de zero.")
+
+   senao
+      delta <- (b^2) - 4 * a * c
+
+      escreval("Delta = ", delta)
+
+      se delta < 0 entao
+         escreval("A equacao nao possui raizes reais.")
+
+      senao
+         se delta = 0 entao
+            x1 <- -b / (2 * a)
+            escreval("A equacao possui uma raiz real: ", x1)
+
+         senao
+            x1 <- (-b + raizq(delta)) / (2 * a)
+            x2 <- (-b - raizq(delta)) / (2 * a)
+
+            escreval("x1 = ", x1)
+            escreval("x2 = ", x2)
+         fimse
+      fimse
+   fimse
+
+fimalgoritmo
+```
