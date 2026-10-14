@@ -1,0 +1,40 @@
+```portugol
+algoritmo "calculadora_de_viagem"
+
+var
+   distanciaPorKm: real
+   consumoPorKm: real
+   precoLitro: real
+   quantPessoas: inteiro
+   litros: real
+   custoTotal: real
+   custoPessoa: real
+
+inicio
+
+   escreval("Qual a distancia total da viagem em km?")
+   leia(distanciaPorKm)
+
+   escreval("Quantos km por litro seu veiculo faz?")
+   leia(consumoPorKm)
+
+   escreval("Qual o preco do litro do combustivel?")
+   leia(precoLitro)
+
+   escreval("Quantas pessoas irao nessa viagem?")
+   leia(quantPessoas)
+
+   litros <- distanciaPorKm / consumoPorKm
+   custoTotal <- litros * precoLitro
+   custoPessoa <- custoTotal / quantPessoas
+
+   escreval("")
+   escreval("===== RESUMO DA VIAGEM =====")
+   escreval("Distancia: ", distanciaPorKm, " km")
+   escreval("Combustivel necessario: ", litros, " litros")
+   escreval("Custo total: R$ ", custoTotal)
+   escreval("Quantidade de pessoas: ", quantPessoas)
+   escreval("Custo por pessoa: R$ ", custoPessoa)
+
+fimalgoritmo
+```
