@@ -1,0 +1,23 @@
+```portugol
+algoritmo "treino"
+
+var
+   n: real
+
+inicio
+
+   escreval("Digite um numero:")
+   leia(n)
+
+   se (n < 0) entao
+      escreval("O numero ", n, " e negativo")
+   senao
+      se (n > 0) entao
+         escreval("O numero ", n, " e positivo")
+      senao
+         escreval(n, " e exatamente igual a zero")
+      fimse
+   fimse
+
+fimalgoritmo
+```
