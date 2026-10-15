@@ -1,0 +1,27 @@
+```portugol
+algoritmo "verificar_faixa_etaria"
+
+var
+   idade: inteiro
+
+inicio
+
+   escreval("Quantos anos voce tem?")
+   leia(idade)
+
+   se (idade < 0) entao
+      escreval("Idade invalida, por favor digite novamente!")
+   senao
+      se (idade < 18) entao
+         escreval("Voce e menor de idade!")
+      senao
+         se (idade <= 59) entao
+            escreval("Voce e adulto!")
+         senao
+            escreval("Voce e idoso!")
+         fimse
+      fimse
+   fimse
+
+fimalgoritmo
+```
