@@ -1,0 +1,28 @@
+algoritmo "calcular imposto"
+
+var
+    emprestimo: real
+    parcelas: inteiro
+    juros: real
+    total: real
+    valorparcela: real
+
+inicio
+
+    escreval("Quanto você deseja pegar de emprestimo? ")
+    leia(emprestimo)
+    escreval("Em quantas vezes você deseja parcelar?")
+    leia(parcelas)
+
+    juros <- (emprestimo * 20) / 100
+    total <- emprestimo + juros
+    valorparcela <- total / parcelas
+
+    escreval("")
+    escreval("VALOR DO EMPRESTIMO: R$ ", emprestimo)
+    escreval("VALOR DOS JUROS: R$ ", juros)
+    escreval("VALOR TOTAL COM JUROS: R$ ", total)
+    escreval("QUANTIDADE DE PARCELAS: ", parcelas)
+    escreval("VALOR DE CADA PARCELA: R$ ", valorparcela)
+
+fimalgoritmo
