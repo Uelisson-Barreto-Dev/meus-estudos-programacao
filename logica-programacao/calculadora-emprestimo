@@ -1,0 +1,34 @@
+**Arquivo:** `calculadora-emprestimo.alg`
+
+```portugol
+algoritmo "calculadora_emprestimo"
+
+var
+    emprestimo: real
+    parcelas: inteiro
+    juros: real
+    total: real
+    valorparcela: real
+
+inicio
+    escreval("Quanto você deseja pegar de empréstimo?")
+    leia(emprestimo)
+
+    escreval("Em quantas vezes você deseja parcelar?")
+    leia(parcelas)
+
+    juros <- (emprestimo * 20) / 100
+    total <- emprestimo + juros
+    valorparcela <- total / parcelas
+
+    escreval("")
+    escreval("VALOR DO EMPRESTIMO: R$ ", emprestimo:5:2)
+    escreval("VALOR DOS JUROS: R$ ", juros:5:2)
+    escreval("VALOR TOTAL COM JUROS: R$ ", total:5:2)
+    escreval("QUANTIDADE DE PARCELAS: ", parcelas)
+    escreval("VALOR DE CADA PARCELA: R$ ", valorparcela:5:2)
+
+fimalgoritmo
+```
+
+*Observação: aplica uma taxa fixa de 20% sobre o valor inicial do empréstimo. Ainda falta validar se a quantidade de parcelas é maior que zero.*
