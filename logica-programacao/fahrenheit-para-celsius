@@ -1,0 +1,19 @@
+**Arquivo:** `fahrenheit-para-celsius.alg`
+
+```portugol
+algoritmo "fahrenheit_para_celsius"
+
+var
+    f: real
+    c: real
+
+inicio
+    escreval("Digite a temperatura em Fahrenheit:")
+    leia(f)
+
+    c <- (f - 32) / 1.8
+
+    escreval("Temperatura em Celsius: ", c:4:1, " C")
+
+fimalgoritmo
+```
