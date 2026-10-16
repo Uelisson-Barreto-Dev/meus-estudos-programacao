@@ -1,0 +1,20 @@
+**Arquivo:** `par-ou-impar.alg`
+
+```portugol
+algoritmo "par_ou_impar"
+
+var
+    N: inteiro
+
+inicio
+    escreval("Digite um número qualquer:")
+    leia(N)
+
+    se (N mod 2 = 0) entao
+        escreval("O número ", N, " é PAR")
+    senao
+        escreval("O número ", N, " é IMPAR")
+    fimse
+
+fimalgoritmo
+```
