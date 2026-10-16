@@ -1,0 +1,21 @@
+**Arquivo:** `converter-real-para-dolar.alg`
+
+```portugol
+algoritmo "converter_real_para_dolar"
+
+var
+    reais: real
+    dolar: real
+
+inicio
+    escreval("Quantos reais você deseja converter?")
+    leia(reais)
+
+    dolar <- reais / 5.10
+
+    escreval("Valor em dólares: US$ ", dolar:5:2)
+
+fimalgoritmo
+```
+
+*Observação: utiliza uma cotação fixa de R$ 5,10 por dólar, apenas para fins didáticos.*
